@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+header{
+    background-color: magenta;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5px solid red; */
+}
+.sidebar{
+    width: 400px;
+    padding: 20px;
+    border-left: 1px solid #a41c1c;
+}
+label{
+    margin-bottom: 5px;
+}
+.form-container input{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* pseudo class */
+input:focus{
+    outline: 2px solid magenta;
+}
+.container{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+}
+.table-container{
+    flex: 1;
+    padding: 20px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+table,th,td{
+    border:2px solid #ddd
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+/* pseudo class */
+tbody tr:hover{
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+h2{
+    margin-bottom: 20px;
+}
+/* button{
+    padding: 10px;
+    margin-bottom: 20px; 
+} */
+/* psuedo class*/
+header:hover{ 
+color: white;
+background-color: black;
+}
+
+fieldset{
+    border: none;
+}
+legend{
+    margin-bottom: 10px;
+}
+
+.inline-options{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    padding:10px
+}
+/* pseudo element */
+header::before{
+    content: "Welcome to";  
+}
+
+th::first-letter{
+    color: magenta;
+}
+
+#submit-btn{
+    background-color: yellow;
+    color: white;
+    padding: 1opx;
+    border: none;
+    cursor: pointer;
+}
